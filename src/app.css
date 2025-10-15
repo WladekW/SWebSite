@@ -1,0 +1,18 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;    
+}
+
+
+body{
+  background-color: #080808;
+}
+
+main{
+  padding: 0 6px;
+}
+
