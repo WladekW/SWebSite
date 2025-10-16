@@ -24,7 +24,7 @@
   .main_menu{
     display: flex;
     justify-content: space-between;
-    padding: 6px;
+    padding: 6px 0;
   }
 
   .main_menu--logo{

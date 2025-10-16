@@ -11,12 +11,13 @@
     padding: 0 16px;
     height: 32px;
     align-content: center;
-    background-color: #da373d;
+    background-color: var(--orange-color);
     border: none;
     border-radius: 4px;
   }
   
-  a{
+  button > a{
+    color: black;
     border-color: transparent;
     border-style: solid;
     border-width: 0 0 1px 0;
@@ -24,6 +25,7 @@
   }
 
   button:hover > a{
+    color: #fff;
     border-color: #fff;
   }
 </style>

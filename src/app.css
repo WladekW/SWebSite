@@ -1,4 +1,11 @@
+:root{
+  --gray-color: #1e1e1e;
+  --background-color: #060503;
+  --orange-color: #da373d;
+}
+
 *{
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,12 +14,19 @@ a{
   text-decoration: none;    
 }
 
-
-body{
-  background-color: #080808;
+h4{
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
-main{
-  padding: 0 6px;
+body{
+  background-color: var(--background-color);
+}
+
+main,
+header,
+footer{
+  max-width: 1440px;
+  margin: auto;
 }
 

@@ -11,7 +11,7 @@
     padding: 0 16px;
     height: 32px;
     align-content: center;
-    background-color: #222;
+    background-color: var(--gray-color);
     border: none;
     border-radius: 4px;
   }

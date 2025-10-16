@@ -7,8 +7,8 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-  <link rel="stylesheet" href="src/app.css">
   <link rel="stylesheet" href="src/reset.css">
+  <link rel="stylesheet" href="src/app.css">
 </svelte:head>
 
 <MainLayout>
