@@ -13,7 +13,7 @@
     align-content: center;
     background-color: var(--orange-color);
     border: none;
-    border-radius: 4px;
+    border-radius: var(--std-radius);
   }
   
   button > a{
@@ -25,7 +25,7 @@
   }
 
   button:hover > a{
-    color: #fff;
-    border-color: #fff;
+    color: var(--text-color);
+    border-color: var(--text-color);
   }
 </style>

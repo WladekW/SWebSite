@@ -1,17 +1,29 @@
 :root{
   --gray-color: #1e1e1e;
   --background-color: #060503;
-  --orange-color: #da373d;
+  --orange-color: #d44f53;
+  --text-color: #d8d8d8;
+  --p-color: #999;
+
+  --std-space: 8px;
+  --std-radius: 6px;
+
+  --std-border: 1px #999 solid;
 }
 
 *{
-  color: #fff;
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;    
+}
+
+h1{
+  text-decoration: uppercase;
+  font-size: 108px;
 }
 
 h4{
@@ -23,10 +35,13 @@ body{
   background-color: var(--background-color);
 }
 
-main,
+main > section,
 header,
 footer{
   max-width: 1440px;
   margin: auto;
 }
 
+.support_slider  img{
+  height: 54px;
+}

@@ -13,12 +13,12 @@
 <style>
   .more_block{
     width: fit-content;
-    padding: 40px 40px 0 40px;
+    padding: 54px 34px 34px 54px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     background-color: var(--gray-color);
-    border-radius: 6px;
+    border-radius: var(--std-radius);
   }
 
   .more_block > p{

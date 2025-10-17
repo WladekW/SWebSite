@@ -24,7 +24,7 @@
   .main_menu{
     display: flex;
     justify-content: space-between;
-    padding: 6px 0;
+    padding: var(--std-space) 0;
   }
 
   .main_menu--logo{
@@ -36,6 +36,6 @@
   
   .main_menu--list{
     display: flex;
-    gap: 6px;
+    gap: var(--std-space);
   }
 </style>

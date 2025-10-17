@@ -16,15 +16,14 @@
 <style>
   .learn_more{
     width: fit-content;
-    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center; 
-    gap: 10px;
+    gap: var(--std-space);
   }
 
   .learn_more > div{
-    background-color: #fff4;
+    background-color: #fff2;
     width: 32px;
     height: 32px;
     border: 1px #999 solid;
