@@ -33,7 +33,7 @@
     gap: 16px;
   }
 
-  .more_block > p{
+  .more_block  p{
     color: #999;
   }
 </style>
