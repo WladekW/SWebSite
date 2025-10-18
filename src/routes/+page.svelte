@@ -12,19 +12,18 @@
 
 
 <section class="home_screen">
-  <BrightnessMask brightness = "5f"/>
-    <div class="home_screen--content">
-      <div class="home_screen--intro">
-        <h1>Mechaniak - <br>The Golden Age</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis earum tenetur illum ducimus enim quod numquam possimus placeat quo, explicabo ab quasi praesentium, quis ad! Suscipit reiciendis necessitatibus nemo?</p>
-      </div>
-      <div class="home_screen--learn_more">
-        <LearnMore 
-          arrowDir="180deg"
-        />
-      </div>
+  <BrightnessMask brightness = "88"/>
+  <div class="home_screen--content">
+    <div class="home_screen--intro">
+      <h1>Mechaniak - <br>The Golden Age</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilisearum tenetur illum ducimus enim quod numquam possimus placeat quo,explicabo ab quasi praesentium, quis ad! Suscipit reiciendisnecessitatibus nemo?</p>
     </div>
-  <BrightnessMask/>
+    <div class="home_screen--learn_more">
+      <LearnMore 
+        arrowDir="180deg"
+      />
+    </div>
+  </div>
 </section>
 
 <Slider>
@@ -107,7 +106,7 @@
   .home_screen{
     height: 800px;
     margin-top: 0;
-    background-image: url('/Img/(4).webp');
+    background-image: url('/Img/bg/(4).webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,10 +124,8 @@
   }
 
   .home_screen--content{
-    /* backdrop-filter: blur(10px); */
-    /* border-radius: var(--std-radius); */
-    /* background-color: #0004; */
-    /* border: 1px #99999936 solid; */
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: auto auto;
     align-items: end;

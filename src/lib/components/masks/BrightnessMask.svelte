@@ -1,9 +1,8 @@
 <script>
-  var {children, brightness = "02", className} = $props();
+  var {brightness = "02", className} = $props();
 </script>
 
 <div class="mask {className}" style="background-color: #000000{brightness};">
-  {@render children?.()}
 </div>
 
 
