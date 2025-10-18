@@ -1,25 +1,33 @@
 <script>
-  import MoreBlockH from '$lib/components/MoreBlockH.svelte';
+  import MoreBlockH from '$lib/components/blocks/MoreBlockH.svelte';
+  import GapSlider from '$lib/components/SliderGap.svelte';
   import Slider from '$lib/components/Slider.svelte';
-  import LearnMore from '$lib/components/ui/LearnMore.svelte';
+  import LearnMore from '$lib/components/LearnMore.svelte';
+  import ImgBlock from '$lib/components/blocks/ImgBlock.svelte';
+  import SectionBlock from '$lib/components/blocks/SectionBlock.svelte';
+  import MoreBlockV from '$lib/components/blocks/MoreBlockV.svelte';
+  import BrightnessMask from '$lib/components/masks/BrightnessMask.svelte';
 </script>
 
+
+
 <section class="home_screen">
-  <div class="home_screen--content">
-    <div class="home_screen--intro">
-    <h1>Mechaniak - <br>The Golden Age</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis earum tenetur illum ducimus enim quod numquam possimus placeat quo, explicabo ab quasi praesentium, quis ad! Suscipit reiciendis necessitatibus nemo?</p>
-  </div>
-  <div class="home_screen--learn_more">
-    <LearnMore 
-      arrowDir="180deg"
-    />
-  </div>
-  </div>
-  
+  <BrightnessMask brightness = "5f"/>
+    <div class="home_screen--content">
+      <div class="home_screen--intro">
+        <h1>Mechaniak - <br>The Golden Age</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis earum tenetur illum ducimus enim quod numquam possimus placeat quo, explicabo ab quasi praesentium, quis ad! Suscipit reiciendis necessitatibus nemo?</p>
+      </div>
+      <div class="home_screen--learn_more">
+        <LearnMore 
+          arrowDir="180deg"
+        />
+      </div>
+    </div>
+  <BrightnessMask/>
 </section>
 
-<section class="cards_list_h">
+<Slider>
   <MoreBlockH
     title = "Mikroprocessor"
     text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -36,29 +44,76 @@
     title = "Rozszrzające z matematyki"
     text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
-</section>
-
-<Slider className="support_slider">
-  <img src="/icons/logos/bkash.png" alt="bkash"/>
-  <img src="/icons/logos/bluey.png" alt="bkash"/>
-  <img src="/icons/logos/github.png" alt="bkash"/>
-  <img src="/icons/logos/google.png" alt="bkash"/>
-  <img src="/icons/logos/Jordan.png" alt="bkash"/>
-  <img src="/icons/logos/mico.png" alt="bkash"/>
-  <img src="/icons/logos/netflix.png" alt="bkash"/>
-  <img src="/icons/logos/xbox.png" alt="bkash"/>
+  <MoreBlockH
+    title = "Brainroty w samorządzie"
+    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  />
 </Slider>
 
-<style>
+<GapSlider className="support_slider">
+  <img src="/icons/logos/bkash.png" alt="bkash"/>
+  <img src="/icons/logos/Jordan.png" alt="bkash"/>
+  <img src="/icons/logos/mico.png" alt="bkash"/>
+  <img src="/icons/logos/xbox.png" alt="bkash"/>
+</GapSlider>
 
+<section class="project_about">
+  <ImgBlock
+    className="about--img_block"
+    src="/Img/koyasan.webp"
+  >
+    <LearnMore/>
+  </ImgBlock>
+  <SectionBlock
+    theme="about"
+    title="The Golden Age"
+    text="
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat fugit unde, cupiditate laudantium blanditiis adipisci quam aliquid sapiente sint voluptas laborum et perspiciatis ipsam dolor dignissimos iure. Quos id, porro ea quas delectus quis, a doloremque beatae pariatur modi aliquid debitis labore. Placeat unde nulla rerum ut officiis repellendus soluta libero velit illum, adipisci totam officia mollitia porro nemo, delectus eveniet earum debitis repudiandae? Rem quidem quam, velit itaque inventore similique corporis, magnam nihil, dolor fugit maiores. Possimus non, totam dignissimos quos atque voluptatem omnis? 
+    "
+  />
+</section>
+
+<section class="additional">
+  <div>
+    <MoreBlockV
+      title = "Microcontrolers"
+      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    />
+    <MoreBlockV
+      title = "Travels"
+      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    />
+    <MoreBlockV
+      title = "Gallery"
+      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    />
+    <MoreBlockV
+      title = "Calendar"
+      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    />
+    <MoreBlockV
+      title = "How to get part?"
+      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    />
+  </div>
+  <ImgBlock
+    src="/Img/dhtang.webp"
+  />
+</section>
+
+
+
+<style>
   .home_screen{
-    height: 80vh;
-    background-image: url('/Img/koyasan.webp');
+    height: 800px;
+    margin-top: 0;
+    background-image: url('/Img/(4).webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: var(--std-radius);
     align-content: end;
+    position: relative;
   }
 
   .home_screen--intro{
@@ -66,30 +121,45 @@
     flex-direction: column;
     gap: 40px;
     justify-content: center;
+    max-width: 860px;
   }
 
   .home_screen--content{
-    backdrop-filter: blur(10px);
-    border-radius: var(--std-radius);
-    background-color: #0001;
-    border: var(--std-border);
+    /* backdrop-filter: blur(10px); */
+    /* border-radius: var(--std-radius); */
+    /* background-color: #0004; */
+    /* border: 1px #99999936 solid; */
     display: grid;
     grid-template-columns: auto auto;
-    gap: 100px;
     align-items: end;
     margin: var(--std-space);
-    padding: 40px;
+    padding: var(--big-padding);
+  }
+
+  .home_screen--content p{
+    color: var(--text-color);
   }
 
   .home_screen--learn_more{
     margin-left: auto;
   }
 
-  .cards_list_h{
+  .project_about{
+    height: 540px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--std-space);
-    margin: var(--std-space) auto;
+  }
+
+  .additional{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--std-space);
+  }
+
+  .additional > div{
+    display: grid;
+    gap: var(--std-space);
   }
 
 </style>

@@ -1,6 +1,4 @@
 <script>
-  import { onMount } from "svelte";
-
   var { children, className} = $props();
 </script>
 
@@ -8,15 +6,13 @@
   {@render children?.()}
 </div>
 
-
 <style>
   .slider {
     align-items: center;
-    gap: var(--std-space);
+    padding: 40px 0;
     margin: var(--std-space) 0;
     display: flex;
+    justify-content: space-around;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    align-items: normal;
   }
 </style>

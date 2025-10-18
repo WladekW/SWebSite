@@ -1,5 +1,5 @@
 <script>
-  import LearnMore from '$lib/components/ui/LearnMore.svelte';
+  import LearnMore from '$lib/components/LearnMore.svelte';
 
   var {title, text} = $props();
 </script>
@@ -13,7 +13,8 @@
 <style>
   .more_block{
     width: fit-content;
-    padding: 54px 34px 34px 54px;
+    min-width: 246px;
+    padding: var(--std-padding);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -23,6 +24,5 @@
 
   .more_block > p{
     color: #999;
-    line-height: 1.4;
   }
 </style>
