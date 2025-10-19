@@ -24,6 +24,7 @@
     gap: 16px;
     align-items: center;
     justify-content: space-between;
+    transition: .3s;
   }
 
   .more_block > div{
@@ -33,7 +34,8 @@
     gap: 16px;
   }
 
-  .more_block  p{
-    color: #999;
+
+  .more_block:hover{
+    background-color: var(--gray-lighter-color);
   }
 </style>

@@ -21,6 +21,16 @@
 </header>
 
 <style>
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--background-color);
+    /* background-color: #0008;
+    backdrop-filter: blur(32px); */
+  }
+
   .main_menu{
     display: flex;
     justify-content: space-between;

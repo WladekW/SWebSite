@@ -20,9 +20,10 @@
     gap: 16px;
     background-color: var(--gray-color);
     border-radius: var(--std-radius);
+    transition: .3s;
   }
 
-  .more_block > p{
-    color: #999;
+  .more_block:hover{
+    background-color: var(--gray-lighter-color);
   }
 </style>

@@ -120,7 +120,7 @@
     flex-direction: column;
     gap: 40px;
     justify-content: center;
-    max-width: 860px;
+    max-width: 960px;
   }
 
   .home_screen--content{

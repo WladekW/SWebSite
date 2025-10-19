@@ -1,7 +1,9 @@
 :root{
   --gray-color: #1e1e1e;
+  --gray-lighter-color: #252525;
   --background-color: #060503;
-  --orange-color: #d44f53;
+  --orange-color: #f0503b;
+  --orange-lighter-color: #f06957;
   --text-color: #d8d8d8;
   --p-color: #999;
 
@@ -45,6 +47,7 @@ a{
 h1, h2, h3,
 h4, h5, h6{
   text-transform: uppercase;
+  font-weight: 100;
 }
 
 h1{
@@ -62,6 +65,10 @@ h4{
 p{
   color: var(--p-color);
   line-height: 1.4;
+}
+
+mark{
+  background-color: var(--orange-color);
 }
 
 body{
