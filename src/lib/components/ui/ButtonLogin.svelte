@@ -18,7 +18,7 @@
   }
   
   a{
-    color: black;
+    color: var(--text-color);
     border-color: transparent;
     border-style: solid;
     border-width: 0 0 1px 0;
@@ -30,7 +30,6 @@
   }
 
   button:hover > a{
-    color: var(--text-color);
     border-color: var(--text-color);
   }
 </style>

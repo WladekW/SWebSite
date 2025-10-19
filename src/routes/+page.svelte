@@ -12,7 +12,7 @@
 
 
 <section class="home_screen">
-  <BrightnessMask brightness = "88"/>
+  <BrightnessMask brightness="88"/>
   <div class="home_screen--content">
     <div class="home_screen--intro">
       <h1>Mechaniak - <br>The Golden Age</h1>
@@ -142,7 +142,7 @@
   }
 
   .project_about{
-    height: 540px;
+    min-height: 540px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--std-space);
