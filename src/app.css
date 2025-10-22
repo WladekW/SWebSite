@@ -83,7 +83,7 @@ main{
 }
 
 main > *{
-  margin: var(--std-space) auto ;
+  margin: 0 auto var(--std-space) auto;
 }
 
 

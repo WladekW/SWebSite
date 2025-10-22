@@ -15,7 +15,7 @@
       <li><ButtonLink href="/" text="Projects"/></li>
       <li><ButtonLink href="/" text="About Us"/></li>
       <li><ButtonLink href="/" text="Contact Us"/></li>
-      <li><ButtonLogin href="/" text="Log in"/></li>
+      <li><ButtonLogin href="/auth" text="Log in"/></li>
     </ul>
   </nav>
 </header>
