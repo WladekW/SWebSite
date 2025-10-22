@@ -8,7 +8,7 @@
 <a href={href} class="learn_more">
   <ArrowImg
     className = "arrow_img"
-    href = {href}
+    href = "none"
     arrowDir = {arrowDir}
   />
   <span>

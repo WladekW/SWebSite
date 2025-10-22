@@ -4,14 +4,21 @@
   var {arrowDir = "45deg", href = "/", className} = $props();
 </script>
 
-<a href={href} class="learn_more {className}">
-  <img src="{favicon}" alt="arrow" style="transform: rotate({arrowDir});">
-</a>
+{#if href !== "none"}
+  <a href={href} class="learn_more {className}">
+    <img src="{favicon}" alt="arrow" style="transform: rotate({arrowDir});">
+  </a>
+{:else}
+  <div class="learn_more {className}">
+    <img src="{favicon}" alt="arrow" style="transform: rotate({arrowDir});">
+  </div>
+{/if}
+
 
 <style>
   .learn_more{
     background-color: #fff2;
-    width: 32px;
+    min-width: 32px;
     height: 32px;
     border: 1px #999 solid;
     border-radius: 50%;

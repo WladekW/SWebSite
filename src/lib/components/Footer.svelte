@@ -1,5 +1,18 @@
 <script>
   import SocialMediaBlock from '$lib/components/blocks/SocialMediaBlock.svelte';
+  import { onMount } from 'svelte';
+  
+  var isWideScreen = false;
+
+  const checkWidth = () => {
+    isWideScreen = window.innerWidth > 1040;
+  };
+
+  onMount(() => {
+    checkWidth();
+    window.addEventListener('resize', checkWidth);
+    return () => window.removeEventListener('resize', checkWidth);
+  });
 </script>
 
 <footer>
@@ -97,7 +110,11 @@
       <a href="/privacy">Privacy</a>
     </div>
   </div>
-  <SocialMediaBlock/>
+  {#if isWideScreen}
+    <SocialMediaBlock />
+  {:else}
+    <SocialMediaBlock direction="row" />
+  {/if}
 </footer>
 
 <style>
@@ -126,7 +143,7 @@
     padding: var(--std-padding);
     border-radius: var(--std-radius);    
     display: flex;
-    gap: 64px;
+    gap: 32px;
     justify-content: center; 
   }
 
@@ -165,6 +182,13 @@
   .footer--content > nav:hover,
   .footer--content > div:hover{
     background-color: var(--gray-lighter-color);
+  }
+
+  @media (max-width: 1040px) {
+    footer{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr auto;
+    }
   }
 
 </style>
