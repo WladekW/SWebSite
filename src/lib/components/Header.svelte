@@ -34,11 +34,12 @@
   .main_menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: var(--std-space) 0;
   }
 
   .main_menu--logo{
-    height: 32px;
+    height: 36px;
     img{
       height: 100%;
     }

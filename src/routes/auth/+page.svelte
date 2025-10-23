@@ -1,6 +1,9 @@
 <script>
     import ImgBlock from '$lib/components/blocks/ImgBlock.svelte';
+    import TransparentBlock from '$lib/components/blocks/TransparentBlock.svelte';
     import LoginForm from '$lib/components/LoginForm.svelte';
+    import BlurMask from '$lib/components/masks/BlurMask.svelte';
+
 </script>
 
 
@@ -9,7 +12,13 @@
         className="login--img_block"
         src="/Img/bg/(2).webp"
     >
-
+      <div class="img_block--content">
+        <BlurMask/>
+        <TransparentBlock
+          title="Hello my dear frouinde! How are you From? And what country are you do?"
+          text="-Huaj! Aim from good! And Ich doibeen form DeGermanion - Don!"
+        />
+      </div>
     </ImgBlock>
     <div class="auth_content">
         <h2>Log In</h2>
@@ -26,15 +35,36 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .img_block--content{
+      position: relative;
+      z-index: 2;
+      border-radius: var(--std-radius);
+    }
+
     .auth_content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 24px;
-        padding: 0 192px;
+        padding: 0 20%;
     }
 
     :global(.auth_content--form){
         width: 100%;
+    }
+
+    @media (max-width: 1040px){
+      .login_section{
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+
+      :global(.login--img_block){
+        height: fit-content;
+      }
+
+      .auth_content{
+        padding: var(--std-padding);
+      }
     }
 </style>

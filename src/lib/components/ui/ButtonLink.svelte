@@ -8,8 +8,6 @@
 
 <style>
   button{
-    padding: 0 16px;
-    height: 32px;
     align-content: center;
     background-color: var(--gray-color);
     border: none;

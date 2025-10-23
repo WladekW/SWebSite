@@ -2,10 +2,10 @@
 	import favicon from '$lib/assets/icons/arrow24dp.svg';
   import ArrowImg from '$lib/components/ui/ArrowLink.svelte';
   
-  var {src, children} = $props();
+  var {src, children, className} = $props();
 </script>
 
-<div style="background-image: url('{src}');">
+<div style="background-image: url('{src}');" class="{className}">
   {@render children?.()}
 </div>
 

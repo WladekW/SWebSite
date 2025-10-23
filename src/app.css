@@ -8,6 +8,7 @@
   --p-color: #999;
 
   --std-space: 8px;
+  --ui-element-padding: 12px;
   --std-padding:  44px 44px 44px 44px;
   --big-padding:  64px 64px 64px 64px;
 
@@ -70,6 +71,14 @@ p{
 
 mark{
   background-color: var(--orange-color);
+}
+
+button{
+  padding: var(--ui-element-padding);
+}
+
+input{
+  padding: var(--ui-element-padding);
 }
 
 body{

@@ -22,10 +22,9 @@
 <style>
     form input,
     form button {
-        border: none;
-        border-radius: var(--std-radius);
-        padding: var(--std-space);
-        transition: .3s;
+      border: none;
+      border-radius: var(--std-radius);
+      transition: .3s;
     }
 
     form{
