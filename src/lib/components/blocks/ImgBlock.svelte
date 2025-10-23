@@ -19,6 +19,5 @@
     display: flex;
     align-items: end;
     justify-content: end;
-    padding: var(--big-padding);
   }
 </style>

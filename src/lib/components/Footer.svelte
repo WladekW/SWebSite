@@ -1,18 +1,5 @@
 <script>
   import SocialMediaBlock from '$lib/components/blocks/SocialMediaBlock.svelte';
-  import { onMount } from 'svelte';
-  
-  var isWideScreen = false;
-
-  const checkWidth = () => {
-    isWideScreen = window.innerWidth > 1040;
-  };
-
-  onMount(() => {
-    checkWidth();
-    window.addEventListener('resize', checkWidth);
-    return () => window.removeEventListener('resize', checkWidth);
-  });
 </script>
 
 <footer>
@@ -110,11 +97,7 @@
       <a href="/privacy">Privacy</a>
     </div>
   </div>
-  {#if isWideScreen}
-    <SocialMediaBlock />
-  {:else}
-    <SocialMediaBlock direction="row" />
-  {/if}
+  <SocialMediaBlock className="footer_socials"/>
 </footer>
 
 <style>
@@ -161,6 +144,10 @@
     color: var(--p-color);
   }
 
+  :global(.footer_socials){
+    flex-direction: column;
+  }
+
   .footer_policy{
     background-color: var(--gray-color);
     padding: var(--std-padding);
@@ -179,6 +166,7 @@
     transition: .3s;
   }
 
+
   .footer--content > nav:hover,
   .footer--content > div:hover{
     background-color: var(--gray-lighter-color);
@@ -188,6 +176,21 @@
     footer{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr auto;
+    }
+    :global(.footer_socials){
+      flex-direction: row;
+    }
+  }
+
+  @media (max-width: 600px){
+    .footer_menu--list>li:not(:first-child){
+      display: none;
+    }
+    .footer_menu, .footer_policy{
+      flex-direction: column;
+      gap: var(--std-space);
+      align-items: center;
+      padding: 16px;
     }
   }
 

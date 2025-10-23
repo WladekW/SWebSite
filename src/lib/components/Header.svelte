@@ -1,7 +1,14 @@
 <script>
+  import { onMount } from 'svelte';
   import ButtonLink from '$lib/components/ui/ButtonLink.svelte';
   import ButtonLogin from '$lib/components/ui/ButtonLogin.svelte';
   import favicon from '$lib/assets/favicon.svg';
+
+  var isOpen;
+  function toggleMenu() {
+    isOpen = !isOpen;
+  }
+
 </script>
 
 <header>
@@ -16,6 +23,19 @@
       <li><ButtonLink href="/" text="About Us"/></li>
       <li><ButtonLink href="/" text="Contact Us"/></li>
       <li><ButtonLogin href="/auth" text="Log in"/></li>
+    </ul>
+    <button aria-label="menu" class="burger_menu" bind:this={burgerMenuBtn} on:click={toggleMenu}>
+      <hr>
+      <hr>
+      <hr>
+    </button>
+    <ul class="burger_menu--list" bind:this={burgerMenuList} class:open={isOpen}>
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Clubs</a></li>
+      <li><a href="/">Projects</a></li>
+      <li><a href="/" >About Us</a></li>
+      <li><a href="/">Contact Us</a></li>
+      <li><a href="/auth">Log in</a></li>
     </ul>
   </nav>
 </header>
@@ -32,6 +52,8 @@
   }
 
   .main_menu{
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,5 +70,46 @@
   .main_menu--list{
     display: flex;
     gap: var(--std-space);
+  }
+
+  .burger_menu{
+    width: 32px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: none;
+  }
+
+  .burger_menu--list{
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-color: var(--background-color);
+    /* display: none; */
+    position: absolute;
+    z-index: -1;
+    top: -100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;  
+    transition: .3s;   
+  }
+
+  .burger_menu--list.open{
+    top: 0;
+  }
+
+  .burger_menu > hr{
+    border: 1px var(--text-color) solid;
+  }
+
+  @media (max-width: 600px){
+    .main_menu--list{
+      display: none;
+    }
+    .burger_menu{
+      display: block;
+    }
   }
 </style>

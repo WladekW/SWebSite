@@ -44,6 +44,7 @@
 a{
   color: var(--text-color);
   text-decoration: none;    
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3,
@@ -79,6 +80,7 @@ button{
 
 input{
   padding: var(--ui-element-padding);
+  border: none;
 }
 
 body{
@@ -98,4 +100,16 @@ main > *{
 
 .support_slider  img{
   height: 54px;
+}
+
+*:focus{
+  outline: 1px var(--orange-color) solid;
+}
+
+@media (max-width: 600px){
+  header,
+  footer,
+  main{
+    padding: 0 8px;
+  }
 }

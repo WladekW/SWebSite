@@ -30,9 +30,13 @@
 
 <style>
     .login_section{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    :global(.login--img_block){
+      padding: var(--std-padding);
     }
 
     .img_block--content{
@@ -42,11 +46,11 @@
     }
 
     .auth_content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 24px;
-        padding: 0 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      padding: 0 20%;
     }
 
     :global(.auth_content--form){
@@ -64,7 +68,13 @@
       }
 
       .auth_content{
-        padding: var(--std-padding);
+        padding: 64px 0;
+      }
+    }
+
+    @media (max-width: 600px){
+      :global(.login--img_block){
+        padding: 0;
       }
     }
 </style>

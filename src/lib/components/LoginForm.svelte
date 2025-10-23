@@ -3,12 +3,12 @@
 </script>
 
 
-<form method="POST" class="{className}">
-    <label for="email">
+<form method="post" class="{className}">
+    <label for="emailInput">
         Email adress*
         <input type="email" name="email" id="emailInput" placeholder="example@email.com">
     </label>
-    <label for="password">
+    <label for="passwordInput">
         Password*
         <input type="password" name="password" id="passwordInput" placeholder="password">
     </label>
@@ -22,7 +22,6 @@
 <style>
     form input,
     form button {
-      border: none;
       border-radius: var(--std-radius);
       transition: .3s;
     }
@@ -38,6 +37,7 @@
 
     form button{
         background-color: var(--orange-lighter-color);
+        border: none;
     }
 
     label{
