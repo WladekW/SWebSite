@@ -42,7 +42,7 @@
 
     label{
         display: grid;
-        gap: 16px;
+        gap: 4px;
     }
 
     button:hover{

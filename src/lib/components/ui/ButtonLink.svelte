@@ -8,6 +8,7 @@
 
 <style>
   button{
+    padding: var(--ui-element-padding);
     align-content: center;
     background-color: var(--gray-color);
     border: none;

@@ -49,12 +49,12 @@
   />
 </Slider>
 
-<GapSlider className="support_slider">
+<section class="support_slider">
   <img src="/icons/logos/bkash.png" alt="bkash"/>
   <img src="/icons/logos/Jordan.png" alt="bkash"/>
   <img src="/icons/logos/mico.png" alt="bkash"/>
   <img src="/icons/logos/xbox.png" alt="bkash"/>
-</GapSlider>
+</section>
 
 <section class="project_about">
   <ImgBlock
@@ -64,6 +64,7 @@
     <LearnMore/>
   </ImgBlock>
   <SectionBlock
+    className="project_about--section_block"
     theme="about"
     title="The Golden Age"
     text="
@@ -97,6 +98,7 @@
   </div>
   <ImgBlock
     src="/Img/dhtang.webp"
+    className="additional--img_block"
   />
 </section>
 
@@ -157,6 +159,69 @@
   .additional > div{
     display: grid;
     gap: var(--std-space);
+  }
+
+  :global(.about--img_block){
+    padding: var(--big-padding);
+  }
+
+  .support_slider{
+    align-items: center;
+    padding: 40px 0;
+    margin: var(--std-space) 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+  @media (max-width: 1040px){
+    .home_screen--content{
+      gap: 32px;
+      grid-template-columns: 1fr;
+    }
+
+    .support_slider{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .project_about,
+    .additional{
+      grid-template-columns: 1fr;
+    }
+
+    .additional > :first-child {grid-row: 2;}
+    .additional > :last-child {grid-row: 1;}
+
+    :global(.about--img_block),
+    :global(.additional--img_block){
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 600px){
+    .home_screen{
+      height: fit-content;
+    }
+    .home_screen--content{
+      padding: 16px;
+    }
+    .support_slider{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px;
+    }
+
+    :global(.about--img_block){
+      padding: 16px;
+    }
+
+    .project_about > :global(.section_block p){
+      column-count: 1;
+    }
+    .project_about > :global(.section_block){
+      padding: 32px;
+    }
+
   }
 
 </style>
