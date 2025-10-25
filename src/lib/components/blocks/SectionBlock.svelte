@@ -1,9 +1,9 @@
 <script>
-  var {className ,theme = "theme", title = "Title", text} = $props();
+  var {className ,category = "category", title = "Title", text} = $props();
 </script>
 
 <div class="section_block {className}">
-  <span>{theme}</span>
+  <span>{category}</span>
   <div>
     <h2>{title}</h2>
     <p>{text}</p>

@@ -3,10 +3,11 @@
   import GapSlider from '$lib/components/SliderGap.svelte';
   import Slider from '$lib/components/Slider.svelte';
   import LearnMore from '$lib/components/LearnMore.svelte';
-  import ImgBlock from '$lib/components/blocks/ImgBlock.svelte';
+  import ImgBlock from '$lib/components/blocks/ImgBgBlock.svelte';
   import SectionBlock from '$lib/components/blocks/SectionBlock.svelte';
   import MoreBlockV from '$lib/components/blocks/MoreBlockV.svelte';
   import BrightnessMask from '$lib/components/masks/BrightnessMask.svelte';
+  import ImgBgBlock from '$lib/components/blocks/ImgBgBlock.svelte';
 </script>
 
 
@@ -65,7 +66,7 @@
   </ImgBlock>
   <SectionBlock
     className="project_about--section_block"
-    theme="about"
+    category="about"
     title="The Golden Age"
     text="
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat fugit unde, cupiditate laudantium blanditiis adipisci quam aliquid sapiente sint voluptas laborum et perspiciatis ipsam dolor dignissimos iure. Quos id, porro ea quas delectus quis, a doloremque beatae pariatur modi aliquid debitis labore. Placeat unde nulla rerum ut officiis repellendus soluta libero velit illum, adipisci totam officia mollitia porro nemo, delectus eveniet earum debitis repudiandae? Rem quidem quam, velit itaque inventore similique corporis, magnam nihil, dolor fugit maiores. Possimus non, totam dignissimos quos atque voluptatem omnis? 
@@ -96,9 +97,9 @@
       text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
   </div>
-  <ImgBlock
+  <ImgBgBlock
     src="/Img/dhtang.webp"
-    className="additional--img_block"
+    class="additional--img_block"
   />
 </section>
 
@@ -173,6 +174,7 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
   }
+
 
   @media (max-width: 1040px){
     .home_screen--content{

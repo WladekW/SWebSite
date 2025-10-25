@@ -1,5 +1,5 @@
 <script>
-    import ImgBlock from '$lib/components/blocks/ImgBlock.svelte';
+    import ImgBlock from '$lib/components/blocks/ImgBgBlock.svelte';
     import TransparentBlock from '$lib/components/blocks/TransparentBlock.svelte';
     import LoginForm from '$lib/components/LoginForm.svelte';
     import BlurMask from '$lib/components/masks/BlurMask.svelte';
@@ -31,6 +31,7 @@
 <style>
     .login_section{
       height: 100vh;
+      max-height: 1080px;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }

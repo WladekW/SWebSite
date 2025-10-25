@@ -18,9 +18,9 @@
     </a>
     <ul class="main_menu--list">
       <li><ButtonLink href="/" text="Home"/></li>
-      <li><ButtonLink href="/" text="Clubs"/></li>
+      <li><ButtonLink href="/clubs" text="Clubs"/></li>
       <li><ButtonLink href="/" text="Projects"/></li>
-      <li><ButtonLink href="/" text="About Us"/></li>
+      <li><ButtonLink href="/calendar" text="Calendar"/></li>
       <li><ButtonLink href="/" text="Contact Us"/></li>
       <li><ButtonLogin href="/auth" text="Log in"/></li>
     </ul>
@@ -31,9 +31,9 @@
     </button>
     <ul class="burger_menu--list" bind:this={burgerMenuList} class:open={isOpen}>
       <li><a href="/">Home</a></li>
-      <li><a href="/">Clubs</a></li>
+      <li><a href="/clubs">Clubs</a></li>
       <li><a href="/">Projects</a></li>
-      <li><a href="/" >About Us</a></li>
+      <li><a href="/" >Calendar</a></li>
       <li><a href="/">Contact Us</a></li>
       <li><a href="/auth">Log in</a></li>
     </ul>

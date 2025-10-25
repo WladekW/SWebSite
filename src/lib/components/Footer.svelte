@@ -29,7 +29,7 @@
       </ul>
       <ul class="footer_menu--list">
         <li>
-          <a href="/"><h5>Clubs</h5></a>
+          <a href="/clubs"><h5>Clubs</h5></a>
         </li>
         <li>
           <a href="/"><span>Section</span></a>
@@ -66,7 +66,7 @@
       </ul>
       <ul class="footer_menu--list">
         <li>
-          <a href="/"><h5>About US</h5></a>
+          <a href="/calendar"><h5>Calendar</h5></a>
         </li>
         <li>
           <a href="/"><span>Section</span></a>

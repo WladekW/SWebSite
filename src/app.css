@@ -93,6 +93,13 @@ main{
   padding: 0 20px;
 }
 
+header > nav,
+footer,
+main{
+  max-width: 1920px;
+  margin: auto;
+}
+
 main > *{
   margin: 0 auto var(--std-space) auto;
 }
