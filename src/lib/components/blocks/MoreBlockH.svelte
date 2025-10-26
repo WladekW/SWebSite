@@ -1,7 +1,7 @@
 <script>
   import LearnMore from '$lib/components/LearnMore.svelte';
 
-  var {category = "", title, text, className} = $props();
+  var {category = "", title, text, className, href} = $props();
 </script>
 
 <div class="more_block {className}">
@@ -12,7 +12,7 @@
     <h4>{title}</h4>
     <p>{text}</p>
   </div>
-  <LearnMore/>
+  <LearnMore href={href}/>
 </div>
 
 <style>

@@ -16,6 +16,7 @@
     category = "MICROCONTROLER"
     title = "Mikroprocessor"
     text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem ducimus nisi, sequi quod, necessitatibus, quidem cupiditate dolorum saepe quasi ratione? Tempora eius in accusantium qui fugit enim dolores, explicabo, sequi magni, odio dicta. Porro voluptas tempora ad optio nobis odit quidem at, sapiente libero praesentium sit alias deserunt aspernatur."
+    href = "/clubs/micro"
   />
   
   <img src="/Img/clubs/1.webp" alt="img">
