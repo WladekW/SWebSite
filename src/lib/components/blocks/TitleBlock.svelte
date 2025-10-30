@@ -41,4 +41,10 @@
     }
   }
 
+    @media (max-width: 1040px){
+    .title_block{
+      padding: 16px;
+    }
+  }
+
 </style>

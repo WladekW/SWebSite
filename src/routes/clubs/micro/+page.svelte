@@ -5,7 +5,7 @@
 
 <TitleBlock
   category="Microprocessor"
-  title="Micrprocessssorki z Panem B i Panem S"
+  title="Micrprocessory z Panem B i Panem S"
   text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad incidunt maiores non pariatur iure aperiam voluptatum officiis ducimus."
 />
 
@@ -15,17 +15,19 @@
     value="12.23.2095"
   />
   <AdditionalBlock
-    name="Data"
-    value="12.23.2095"
+    name="Author"
+    value="Someone Anyoneski"
   />
   <AdditionalBlock
-    name="Data"
-    value="12.23.2095"
+    name="Club"
+    value="Micromechaniak"
   />
 </section>
+
 <section class="welcome_img">
   <img src="/Img/bg/(3).webp" alt="welcom img">
 </section>
+
 <section class="article">
   
 </section>
@@ -48,5 +50,11 @@
     object-fit: cover; 
     display: block;
     border-radius: var(--std-radius);
+  }
+
+  @media (max-width: 600px){
+    .additional{
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 </style>

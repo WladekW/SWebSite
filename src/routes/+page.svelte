@@ -99,7 +99,7 @@
   </div>
   <ImgBgBlock
     src="/Img/dhtang.webp"
-    class="additional--img_block"
+    className="additional--img_block"
   />
 </section>
 
@@ -161,6 +161,7 @@
     display: grid;
     gap: var(--std-space);
   }
+
 
   :global(.about--img_block){
     padding: var(--big-padding);
