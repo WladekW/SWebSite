@@ -1,33 +1,33 @@
 <script>
-  var {href, text = "Log in"} = $props();
+  var { href, text = "Log in" } = $props();
 </script>
 
 <button>
-  <a href={href}>{text}</a>
+  <a {href}>{text}</a>
 </button>
 
 <style>
-  button{
+  button {
     align-content: center;
     background-color: var(--orange-lighter-color);
     border: none;
     border-radius: var(--std-radius);
-    transition: .3s;
+    transition: 0.3s;
   }
-  
-  a{
+
+  a {
     color: var(--text-color);
     border-color: transparent;
     border-style: solid;
     border-width: 0 0 1px 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  button:hover{
+  button:hover {
     background-color: var(--orange-color);
   }
 
-  button:hover > a{
+  button:hover > a {
     border-color: var(--text-color);
   }
 </style>

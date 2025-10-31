@@ -1,22 +1,21 @@
 <script>
-	import favicon from '$lib/assets/icons/arrow24dp.svg';
-  
-  var {arrowDir = "45deg", href = "/", className} = $props();
+  import favicon from "$lib/assets/icons/arrow24dp.svg";
+
+  var { arrowDir = "45deg", href = "/", className } = $props();
 </script>
 
 {#if href !== "none"}
-  <a href={href} class="learn_more {className}">
-    <img src="{favicon}" alt="arrow" style="transform: rotate({arrowDir});">
+  <a {href} class="learn_more {className}">
+    <img src={favicon} alt="arrow" style="transform: rotate({arrowDir});" />
   </a>
 {:else}
   <div class="learn_more {className}">
-    <img src="{favicon}" alt="arrow" style="transform: rotate({arrowDir});">
+    <img src={favicon} alt="arrow" style="transform: rotate({arrowDir});" />
   </div>
 {/if}
 
-
 <style>
-  .learn_more{
+  .learn_more {
     background-color: #fff2;
     min-width: 32px;
     height: 32px;
@@ -25,10 +24,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  .learn_more:hover{
+  .learn_more:hover {
     background-color: transparent;
-  } 
+  }
 </style>

@@ -1,68 +1,66 @@
 <script>
-  import MoreBlockH from '$lib/components/blocks/MoreBlockH.svelte';
-  import GapSlider from '$lib/components/SliderGap.svelte';
-  import Slider from '$lib/components/Slider.svelte';
-  import LearnMore from '$lib/components/LearnMore.svelte';
-  import ImgBlock from '$lib/components/blocks/ImgBgBlock.svelte';
-  import SectionBlock from '$lib/components/blocks/SectionBlock.svelte';
-  import MoreBlockV from '$lib/components/blocks/MoreBlockV.svelte';
-  import BrightnessMask from '$lib/components/masks/BrightnessMask.svelte';
-  import ImgBgBlock from '$lib/components/blocks/ImgBgBlock.svelte';
+  import MoreBlockH from "$lib/components/blocks/MoreBlockH.svelte";
+  import GapSlider from "$lib/components/SliderGap.svelte";
+  import Slider from "$lib/components/Slider.svelte";
+  import LearnMore from "$lib/components/LearnMore.svelte";
+  import ImgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
+  import SectionBlock from "$lib/components/blocks/SectionBlock.svelte";
+  import MoreBlockV from "$lib/components/blocks/MoreBlockV.svelte";
+  import BrightnessMask from "$lib/components/masks/BrightnessMask.svelte";
+  import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
 </script>
 
-
-
 <section class="home_screen">
-  <BrightnessMask brightness="88"/>
+  <BrightnessMask brightness="88" />
   <div class="home_screen--content">
     <div class="home_screen--intro">
-      <h1>Mechaniak - <br>The Golden Age</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilisearum tenetur illum ducimus enim quod numquam possimus placeat quo,explicabo ab quasi praesentium, quis ad! Suscipit reiciendisnecessitatibus nemo?</p>
+      <h1>Mechaniak - <br />The Golden Age</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+        facilisearum tenetur illum ducimus enim quod numquam possimus placeat
+        quo,explicabo ab quasi praesentium, quis ad! Suscipit
+        reiciendisnecessitatibus nemo?
+      </p>
     </div>
     <div class="home_screen--learn_more">
-      <LearnMore 
-        arrowDir="180deg"
-      />
+      <LearnMore arrowDir="180deg" />
     </div>
   </div>
 </section>
 
 <Slider>
   <MoreBlockH
-    title = "Mikroprocessor"
-    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    title="Mikroprocessor"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
   <MoreBlockH
-    title = "Apple"
-    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    title="Apple"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
   <MoreBlockH
-    title = "Foto-Filmowe"
-    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    title="Foto-Filmowe"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
   <MoreBlockH
-    title = "Rozszrzające z matematyki"
-    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    title="Rozszrzające z matematyki"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
   <MoreBlockH
-    title = "Brainroty w samorządzie"
-    text = "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    title="Brainroty w samorządzie"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
   />
 </Slider>
 
 <section class="support_slider">
-  <img src="/icons/logos/bkash.png" alt="bkash"/>
-  <img src="/icons/logos/Jordan.png" alt="bkash"/>
-  <img src="/icons/logos/mico.png" alt="bkash"/>
-  <img src="/icons/logos/xbox.png" alt="bkash"/>
+  <img src="/icons/logos/bkash.png" alt="bkash" />
+  <img src="/icons/logos/Jordan.png" alt="bkash" />
+  <img src="/icons/logos/mico.png" alt="bkash" />
+  <img src="/icons/logos/xbox.png" alt="bkash" />
 </section>
 
 <section class="project_about">
-  <ImgBlock
-    className="about--img_block"
-    src="/Img/koyasan.webp"
-  >
-    <LearnMore/>
+  <ImgBlock className="about--img_block" src="/Img/koyasan.webp">
+    <LearnMore />
   </ImgBlock>
   <SectionBlock
     className="project_about--section_block"
@@ -77,39 +75,34 @@
 <section class="additional">
   <div>
     <MoreBlockV
-      title = "Microcontrolers"
-      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+      title="Microcontrolers"
+      text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
     <MoreBlockV
-      title = "Travels"
-      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+      title="Travels"
+      text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
     <MoreBlockV
-      title = "Gallery"
-      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+      title="Gallery"
+      text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
     <MoreBlockV
-      title = "Calendar"
-      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+      title="Calendar"
+      text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
     <MoreBlockV
-      title = "How to get part?"
-      text = "  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+      title="How to get part?"
+      text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
     />
   </div>
-  <ImgBgBlock
-    src="/Img/dhtang.webp"
-    className="additional--img_block"
-  />
+  <ImgBgBlock src="/Img/dhtang.webp" className="additional--img_block" />
 </section>
 
-
-
 <style>
-  .home_screen{
+  .home_screen {
     height: 800px;
     margin-top: 0;
-    background-image: url('/Img/bg/(4).webp');
+    background-image: url("/Img/bg/(4).webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -118,7 +111,7 @@
     position: relative;
   }
 
-  .home_screen--intro{
+  .home_screen--intro {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -126,7 +119,7 @@
     max-width: 960px;
   }
 
-  .home_screen--content{
+  .home_screen--content {
     position: relative;
     z-index: 2;
     display: grid;
@@ -136,38 +129,37 @@
     padding: var(--big-padding);
   }
 
-  .home_screen--content p{
+  .home_screen--content p {
     color: var(--text-color);
   }
 
-  .home_screen--learn_more{
+  .home_screen--learn_more {
     margin-left: auto;
   }
 
-  .project_about{
+  .project_about {
     min-height: 540px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--std-space);
   }
 
-  .additional{
+  .additional {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--std-space);
   }
 
-  .additional > div{
+  .additional > div {
     display: grid;
     gap: var(--std-space);
   }
 
-
-  :global(.about--img_block){
+  :global(.about--img_block) {
     padding: var(--big-padding);
   }
 
-  .support_slider{
+  .support_slider {
     align-items: center;
     padding: 40px 0;
     margin: var(--std-space) 0;
@@ -176,55 +168,56 @@
     justify-items: center;
   }
 
-
-  @media (max-width: 1040px){
-    .home_screen--content{
+  @media (max-width: 1040px) {
+    .home_screen--content {
       gap: 32px;
       grid-template-columns: 1fr;
     }
 
-    .support_slider{
+    .support_slider {
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
 
     .project_about,
-    .additional{
+    .additional {
       grid-template-columns: 1fr;
     }
 
-    .additional > :first-child {grid-row: 2;}
-    .additional > :last-child {grid-row: 1;}
+    .additional > :first-child {
+      grid-row: 2;
+    }
+    .additional > :last-child {
+      grid-row: 1;
+    }
 
     :global(.about--img_block),
-    :global(.additional--img_block){
+    :global(.additional--img_block) {
       height: 400px;
     }
   }
 
-  @media (max-width: 600px){
-    .home_screen{
+  @media (max-width: 600px) {
+    .home_screen {
       height: fit-content;
     }
-    .home_screen--content{
+    .home_screen--content {
       padding: 16px;
     }
-    .support_slider{
+    .support_slider {
       grid-template-columns: repeat(1, 1fr);
       gap: 32px;
     }
 
-    :global(.about--img_block){
+    :global(.about--img_block) {
       padding: 16px;
     }
 
-    .project_about > :global(.section_block p){
+    .project_about > :global(.section_block p) {
       column-count: 1;
     }
-    .project_about > :global(.section_block){
+    .project_about > :global(.section_block) {
       padding: 32px;
     }
-
   }
-
 </style>

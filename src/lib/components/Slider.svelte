@@ -1,13 +1,12 @@
 <script>
   import { onMount } from "svelte";
 
-  var { children, className} = $props();
+  var { children, className } = $props();
 </script>
 
 <div class="slider {className}">
   {@render children?.()}
 </div>
-
 
 <style>
   .slider {

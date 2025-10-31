@@ -1,5 +1,5 @@
 <script>
-  var {className ,category = "category", title = "Title", text} = $props();
+  var { className, category = "category", title = "Title", text } = $props();
 </script>
 
 <div class="section_block {className}">
@@ -9,7 +9,6 @@
     <p>{text}</p>
   </div>
 </div>
-
 
 <style>
   .section_block {
@@ -21,16 +20,16 @@
     justify-content: space-between;
   }
 
-  .section_block span{
+  .section_block span {
     color: var(--p-color);
     text-transform: uppercase;
   }
 
-  .section_block h2{
+  .section_block h2 {
     margin: 40px 0;
   }
 
-  .section_block p{
+  .section_block p {
     column-count: 2;
     column-gap: 80px;
   }

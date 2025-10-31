@@ -1,5 +1,5 @@
 <script>
-  var {title, text} = $props();
+  var { title, text } = $props();
 </script>
 
 <div class="transparent_block">
@@ -8,7 +8,7 @@
 </div>
 
 <style>
-  .transparent_block{
+  .transparent_block {
     width: fit-content;
     min-width: 246px;
     padding: var(--std-padding);
@@ -17,10 +17,10 @@
     gap: 16px;
     background-color: transparent;
     border-radius: var(--std-radius);
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  .transparent_block p{
+  .transparent_block p {
     color: var(--text-color);
   }
 </style>

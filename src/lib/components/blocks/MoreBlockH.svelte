@@ -1,7 +1,7 @@
 <script>
-  import LearnMore from '$lib/components/LearnMore.svelte';
+  import LearnMore from "$lib/components/LearnMore.svelte";
 
-  var {category = "", title, text, className, href} = $props();
+  var { category = "", title, text, className, href } = $props();
 </script>
 
 <div class="more_block {className}">
@@ -12,11 +12,11 @@
     <h4>{title}</h4>
     <p>{text}</p>
   </div>
-  <LearnMore href={href}/>
+  <LearnMore {href} />
 </div>
 
 <style>
-  .more_block{
+  .more_block {
     width: auto;
     min-width: 246px;
     padding: var(--std-padding);
@@ -26,16 +26,16 @@
     justify-content: space-between;
     background-color: var(--gray-color);
     border-radius: var(--std-radius);
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  .more_block > div{
+  .more_block > div {
     display: flex;
     flex-direction: column;
     gap: var(--std-space);
   }
 
-  .more_block:hover{
+  .more_block:hover {
     background-color: var(--gray-lighter-color);
   }
 </style>

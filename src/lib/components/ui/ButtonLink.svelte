@@ -1,33 +1,33 @@
 <script>
-  var {href="/", text} = $props();
+  var { href = "/", text } = $props();
 </script>
 
 <button>
-  <a href={href}>{text}</a>
+  <a {href}>{text}</a>
 </button>
 
 <style>
-  button{
+  button {
     padding: var(--ui-element-padding);
     align-content: center;
     background-color: var(--gray-color);
     border: none;
     border-radius: var(--std-radius);
-    transition: .3s;
+    transition: 0.3s;
   }
-  
-  a{
+
+  a {
     border-color: transparent;
     border-style: solid;
     border-width: 0 0 1px 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
-  button:hover{
+  button:hover {
     background-color: var(--gray-lighter-color);
   }
 
-  button:hover > a{
+  button:hover > a {
     border-color: var(--text-color);
   }
 </style>

@@ -1,10 +1,8 @@
 <script>
-  var {blur = "8px", className} = $props();
+  var { blur = "8px", className } = $props();
 </script>
 
-<div class="mask {className}" style="backdrop-filter: blur({blur});">
-</div>
-
+<div class="mask {className}" style="backdrop-filter: blur({blur});"></div>
 
 <style>
   div {
