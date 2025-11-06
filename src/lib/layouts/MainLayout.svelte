@@ -6,6 +6,13 @@
   var { children } = $props();
 </script>
 
+<svelte:head>
+  <link rel="icon" href={favicon} />
+  <link rel="stylesheet" href="../../src/reset.css" />
+  <link rel="stylesheet" href="../../src/app.css" />
+</svelte:head>
+
+
 <Header />
 
 <main>
