@@ -3,7 +3,16 @@
   import TitleBlock from "$lib/components/blocks/TitleBlock.svelte";
   import AdditionalBlock from "$lib/components/blocks/AdditionalBlock.svelte";
 
-  var {TitleBlockCategory, TitleBlockTitle, TitleBlockText, data, author, club, ImgSrc, article} = $props();
+  var {
+    TitleBlockCategory,
+    TitleBlockTitle,
+    TitleBlockText,
+    data,
+    author,
+    club,
+    ImgSrc,
+    article,
+  } = $props();
 </script>
 
 <TitleBlock

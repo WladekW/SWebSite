@@ -22,19 +22,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider::-webkit-scrollbar {
+.slider::-webkit-scrollbar,
+textarea::-webkit-scrollbar {
   height: 5px;
   width: 5px;
 }
-.slider::-webkit-scrollbar-track {
+.slider::-webkit-scrollbar-track,
+textarea::-webkit-scrollbar-track {
   border-radius: 3px;
   background-color: #111;
 }
-.slider::-webkit-scrollbar-thumb {
+.slider::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: var(--gray-color);
 }
-.slider::-webkit-scrollbar-thumb:hover {
+.slider::-webkit-scrollbar-thumb:hover,
+textarea::-webkit-scrollbar-thumb:hover {
   background-color: #333;
 }
 
@@ -83,7 +87,8 @@ button {
   padding: var(--ui-element-padding);
 }
 
-input {
+input,
+textarea {
   padding: var(--ui-element-padding);
   border: none;
 }

@@ -1,16 +1,16 @@
 export function load() {
   return {
-    TitleBlockCategory: "Club",
-    TitleBlockTitle: "MicroHard z Panem B i Panem S",
+    TitleBlockCategory: "FotoBudka",
+    TitleBlockTitle: "FotoBudka z Kamilem B i Cpun2",
     TitleBlockText:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad incidunt maiores non pariatur iure aperiam voluptatum officiis ducimus.",
-    data: "12.23.2095",
-    author: "A Bałazy",
-    club: "Microprocessor",
-    ImgSrc: "/Img/bg/(3).webp",
+    data: "12.23.3025",
+    author: "Kubabuba6912",
+    club: "FotoBudka",
+    ImgSrc: "/Img/koyasan.webp",
     article: [
       {
-        title: "ELITE CLUB FOR Specialists",
+        title: "ELITE CLUB FOR THE BEST, SMARTER, STRONGER",
         text: `
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iure
           pariatur recusandae! Quam quasi dolorem molestiae quaerat! Cum eveniet

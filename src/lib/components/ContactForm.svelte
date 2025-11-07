@@ -3,8 +3,10 @@
 </script>
 
 <form method="post" class={className}>
+  <label for="nameInput">
+    <input type="text" name="name" id="nameInput" placeholder="name" />
+  </label>
   <label for="emailInput">
-    <!-- Email adress* -->
     <input
       type="email"
       name="email"
@@ -12,14 +14,13 @@
       placeholder="example@email.com"
     />
   </label>
-  <label for="passwordInput">
-    <!-- Password* -->
-    <input
-      type="password"
-      name="password"
-      id="passwordInput"
-      placeholder="password"
-    />
+  <label for="messageInput">
+    <textarea
+      type="text"
+      name="email"
+      id="messageInput"
+      placeholder="Hello! ... "
+    ></textarea>
   </label>
   <button type="submit">Log In</button>
 </form>
@@ -30,7 +31,8 @@
 
 <style>
   form input,
-  form button {
+  form button,
+  form textarea {
     border-radius: var(--std-radius);
     transition: 0.3s;
   }
@@ -40,7 +42,8 @@
     gap: 16px;
   }
 
-  form input {
+  form input,
+  form textarea {
     background-color: var(--gray-color);
   }
 
@@ -52,6 +55,12 @@
   label {
     display: grid;
     gap: 4px;
+  }
+
+  #messageInput {
+    height: 200px;
+    resize: vertical;
+    max-height: 500px;
   }
 
   button:hover {

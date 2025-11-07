@@ -20,30 +20,21 @@
       <li><ButtonLink href="/clubs" text="Clubs" /></li>
       <li><ButtonLink href="/" text="Projects" /></li>
       <li><ButtonLink href="/calendar" text="Calendar" /></li>
-      <li><ButtonLink href="/" text="Contact Us" /></li>
+      <li><ButtonLink href="/contact" text="Contact Us" /></li>
       <li><ButtonLogin href="/auth" text="Log in" /></li>
     </ul>
-    <button
-      aria-label="menu"
-      class="burger_menu"
-      bind:this={burgerMenuBtn}
-      on:click={toggleMenu}
-    >
+    <button aria-label="menu" class="burger_menu" on:click={toggleMenu}>
       <hr />
       <hr />
       <hr />
     </button>
-    <ul
-      class="burger_menu--list"
-      bind:this={burgerMenuList}
-      class:open={isOpen}
-    >
-      <li><a href="/">Home</a></li>
-      <li><a href="/clubs">Clubs</a></li>
-      <li><a href="/">Projects</a></li>
-      <li><a href="/">Calendar</a></li>
-      <li><a href="/">Contact Us</a></li>
-      <li><a href="/auth">Log in</a></li>
+    <ul class="burger_menu--list" class:open={isOpen}>
+      <li><a href="/" on:click={toggleMenu}>Home</a></li>
+      <li><a href="/clubs" on:click={toggleMenu}>Clubs</a></li>
+      <li><a href="/" on:click={toggleMenu}>Projects</a></li>
+      <li><a href="/calendar" on:click={toggleMenu}>Calendar</a></li>
+      <li><a href="/contact" on:click={toggleMenu}>Contact Us</a></li>
+      <li><a href="/auth" on:click={toggleMenu}>Log in</a></li>
     </ul>
   </nav>
 </header>
