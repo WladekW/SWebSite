@@ -3,8 +3,7 @@
   import GapSlider from "$lib/components/SliderGap.svelte";
   import Slider from "$lib/components/Slider.svelte";
   import LearnMore from "$lib/components/LearnMore.svelte";
-  import ImgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
-  import SectionBlock from "$lib/components/blocks/SectionBlock.svelte";
+  import SectionBlock from "$lib/components/blocks/SectionItemBlock.svelte";
   import MoreBlockV from "$lib/components/blocks/MoreBlockV.svelte";
   import BrightnessMask from "$lib/components/masks/BrightnessMask.svelte";
   import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
@@ -59,9 +58,9 @@
 </section>
 
 <section class="project_about">
-  <ImgBlock className="about--img_block" src="/Img/koyasan.webp">
+  <ImgBgBlock className="about--img_block" src="/Img/koyasan.webp">
     <LearnMore />
-  </ImgBlock>
+  </ImgBgBlock>
   <SectionBlock
     className="project_about--section_block"
     category="about"

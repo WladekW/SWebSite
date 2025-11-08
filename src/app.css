@@ -83,14 +83,13 @@ mark {
   background-color: var(--orange-color);
 }
 
-button {
-  padding: var(--ui-element-padding);
-}
-
+select,
+button,
 input,
 textarea {
   padding: var(--ui-element-padding);
   border: none;
+  border-radius: var(--std-radius);
 }
 
 body {
@@ -141,3 +140,4 @@ main > * {
     padding: 0 8px;
   }
 }
+
