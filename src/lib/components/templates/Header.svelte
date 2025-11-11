@@ -18,7 +18,7 @@
     <ul class="main_menu--list">
       <li><ButtonLink href="/" text="Home" /></li>
       <li><ButtonLink href="/clubs" text="Clubs" /></li>
-      <li><ButtonLink href="/" text="Projects" /></li>
+      <li><ButtonLink href="/projects" text="Projects" /></li>
       <li><ButtonLink href="/calendar" text="Calendar" /></li>
       <li><ButtonLink href="/contact" text="Contact Us" /></li>
       <li><ButtonLogin href="/auth" text="Log in" /></li>

@@ -9,23 +9,28 @@
   import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
 </script>
 
-<section class="home_screen">
-  <BrightnessMask brightness="88" />
-  <div class="home_screen--content">
-    <div class="home_screen--intro">
-      <h1>Mechaniak - <br />The Golden Age</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-        facilisearum tenetur illum ducimus enim quod numquam possimus placeat
-        quo,explicabo ab quasi praesentium, quis ad! Suscipit
-        reiciendisnecessitatibus nemo?
-      </p>
+<!-- <section class="home_screen"> -->
+  <ImgBgBlock
+    src="/Img/bg/(4).webp"
+    className="home_screen"
+  >
+    <BrightnessMask brightness="88" />
+    <div class="home_screen--content">
+      <div class="home_screen--intro">
+        <h1>Mechaniak - <br />The Golden Age</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+          facilisearum tenetur illum ducimus enim quod numquam possimus placeat
+          quo,explicabo ab quasi praesentium, quis ad! Suscipit
+          reiciendisnecessitatibus nemo?
+        </p>
+      </div>
+      <div class="home_screen--learn_more">
+        <LearnMore arrowDir="180deg" />
+      </div>
     </div>
-    <div class="home_screen--learn_more">
-      <LearnMore arrowDir="180deg" />
-    </div>
-  </div>
-</section>
+  </ImgBgBlock>
+<!-- </section> -->
 
 <Slider>
   <MoreBlockH
@@ -98,14 +103,15 @@
 </section>
 
 <style>
-  .home_screen {
+  :global(.home_screen) {
     height: 800px;
     margin-top: 0;
-    background-image: url("/Img/bg/(4).webp");
-    background-repeat: no-repeat;
+    display: block !important;
+    /* background-image: url("/Img/bg/(4).webp"); */
+    /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: var(--std-radius);
+    border-radius: var(--std-radius); */
     align-content: end;
     position: relative;
   }
@@ -197,7 +203,7 @@
   }
 
   @media (max-width: 600px) {
-    .home_screen {
+    :global(.home_screen) {
       height: fit-content;
     }
     .home_screen--content {

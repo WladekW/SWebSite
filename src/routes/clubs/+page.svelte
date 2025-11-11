@@ -1,7 +1,6 @@
 <script>
   import TitleBlock from "$lib/components/blocks/TitleBlock.svelte";
   import MoreBlockH from "$lib/components/blocks/MoreBlockH.svelte";
-  import ImgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
 </script>
 
 <TitleBlock
