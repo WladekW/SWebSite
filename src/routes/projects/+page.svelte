@@ -112,7 +112,11 @@
       padding: 16px;
     }
 
-    .porjects_section :global(.projects_item--section_block p) {
+    .projects_item > :global(.section_block){
+      padding: 32px;
+    }
+
+    .projects_item > :global(.section_block p) {
       column-count: 1;
     }
     .projects_item {

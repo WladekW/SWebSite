@@ -1,5 +1,6 @@
 <script>
-  var { className, category = "category", title = "Title", text } = $props();
+  import LearnMore from "$lib/components/LearnMore.svelte";
+  var { className, category = "category", title = "Title", text , href = "/404"} = $props();
 </script>
 
 <div class="title_block {className}">
@@ -7,7 +8,12 @@
     <span>{category}</span>
     <h2>{title}</h2>
   </div>
-  <p>{text}</p>
+  <div class="content_part">
+    <p>{text}</p>
+    {#if href != "/404"}
+      <LearnMore href = href/>
+    {/if}
+  </div>
 </div>
 
 <style>
@@ -25,22 +31,23 @@
     gap: 32px;
   }
 
-  .title_block > p {
+  .content_part {
     grid-column: 3;
   }
 
   @media (max-width: 1040px) {
     .title_block {
       grid-template-columns: 1fr;
+      padding: 16px;
     }
-    .title_block > p {
+    .content_part {
       grid-column: 1;
     }
   }
 
-  @media (max-width: 1040px) {
+  @media (max-width: 600px) {
     .title_block {
-      padding: 16px;
+      grid-template-columns: 1fr;
     }
   }
 </style>
