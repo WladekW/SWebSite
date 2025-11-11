@@ -112,7 +112,7 @@
       padding: 16px;
     }
 
-    .projects_item > :global(.section_block){
+    .projects_item > :global(.section_block) {
       padding: 32px;
     }
 

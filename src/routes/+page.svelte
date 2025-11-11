@@ -1,4 +1,5 @@
 <script>
+  import TitleH1Block from "$lib/components/blocks/TitleH1Block.svelte";
   import MoreBlockH from "$lib/components/blocks/MoreBlockH.svelte";
   import GapSlider from "$lib/components/SliderGap.svelte";
   import Slider from "$lib/components/Slider.svelte";
@@ -9,27 +10,19 @@
   import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
 </script>
 
-<!-- <section class="home_screen"> -->
-  <ImgBgBlock
-    src="/Img/bg/(4).webp"
-    className="home_screen"
-  >
-    <BrightnessMask brightness="88" />
-    <div class="home_screen--content">
-      <div class="home_screen--intro">
-        <h1>Mechaniak - <br />The Golden Age</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+<ImgBgBlock src="/Img/bg/(4).webp" className="home_screen">
+  <BrightnessMask brightness="88" />
+  <TitleH1Block
+    category="Home"
+    title="Mechaniak - The Golden Age"
+    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
           facilisearum tenetur illum ducimus enim quod numquam possimus placeat
           quo,explicabo ab quasi praesentium, quis ad! Suscipit
-          reiciendisnecessitatibus nemo?
-        </p>
-      </div>
-      <div class="home_screen--learn_more">
-        <LearnMore arrowDir="180deg" />
-      </div>
-    </div>
-  </ImgBgBlock>
+          reiciendisnecessitatibus nemo?"
+    href="/"
+    className="home_screen--content"
+  />
+</ImgBgBlock>
 <!-- </section> -->
 
 <Slider>
@@ -116,30 +109,9 @@
     position: relative;
   }
 
-  .home_screen--intro {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    max-width: 960px;
-  }
-
-  .home_screen--content {
+  :global(.home_screen--content) {
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: end;
-    margin: var(--std-space);
-    padding: var(--big-padding);
-  }
-
-  .home_screen--content p {
-    color: var(--text-color);
-  }
-
-  .home_screen--learn_more {
-    margin-left: auto;
   }
 
   .project_about {
@@ -174,7 +146,11 @@
   }
 
   @media (max-width: 1040px) {
-    .home_screen--content {
+    :global(.home_screen) {
+      height: 520px;
+    }
+
+    :global(.home_screen--content) {
       gap: 32px;
       grid-template-columns: 1fr;
     }
@@ -206,7 +182,7 @@
     :global(.home_screen) {
       height: fit-content;
     }
-    .home_screen--content {
+    :global(.home_screen--content) {
       padding: 16px;
     }
     .support_slider {
