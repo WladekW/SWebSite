@@ -1,16 +1,16 @@
 <script>
-  import favicon from "$lib/assets/icons/arrow24dp.svg";
+  import arrowImg from "$lib/assets/icons/arrow24dp.svg";
 
   var { arrowDir = "45deg", href = "/", className } = $props();
 </script>
 
 {#if href !== "none"}
   <a {href} class="learn_more {className}">
-    <img src={favicon} alt="arrow" style="transform: rotate({arrowDir});" />
+    <img src={arrowImg} alt="arrow" style="transform: rotate({arrowDir});" />
   </a>
 {:else}
   <div class="learn_more {className}">
-    <img src={favicon} alt="arrow" style="transform: rotate({arrowDir});" />
+    <img src={arrowImg} alt="arrow" style="transform: rotate({arrowDir});" />
   </div>
 {/if}
 
