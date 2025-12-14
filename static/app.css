@@ -1,51 +1,51 @@
 :root {
-  --gray-color: #161616;
-  --gray-lighter-color: #1b1b1b;
-  --background-color: #060503;
-  --orange-color: #f0503b;
-  --orange-lighter-color: #f06957;
-  --text-color: #d8d8d8;
-  --p-color: #999;
+    --gray-color: #161616;
+    --gray-lighter-color: #1b1b1b;
+    --background-color: #060503;
+    --orange-color: #f0503b;
+    --orange-lighter-color: #f06957;
+    --text-color: #d8d8d8;
+    --p-color: #999;
 
-  --std-space: 8px;
-  --ui-element-padding: 12px;
-  --std-padding: 44px 44px 44px 44px;
-  --big-padding: 64px 64px 64px 64px;
+    --std-space: 8px;
+    --ui-element-padding: 12px;
+    --std-padding: 44px 44px 44px 44px;
+    --big-padding: 64px 64px 64px 64px;
 
-  --std-radius: 4px;
+    --std-radius: 4px;
 
-  --std-border: 1px #999 solid;
+    --std-border: 1px #999 solid;
 }
 
 * {
-  color: var(--text-color);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .slider::-webkit-scrollbar,
 textarea::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
+    height: 5px;
+    width: 5px;
 }
 .slider::-webkit-scrollbar-track,
 textarea::-webkit-scrollbar-track {
-  border-radius: 3px;
-  background-color: #111;
+    border-radius: 3px;
+    background-color: #111;
 }
 .slider::-webkit-scrollbar-thumb,
 textarea::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background-color: var(--gray-color);
+    border-radius: 3px;
+    background-color: var(--gray-color);
 }
 .slider::-webkit-scrollbar-thumb:hover,
 textarea::-webkit-scrollbar-thumb:hover {
-  background-color: #333;
+    background-color: #333;
 }
 
 a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -54,90 +54,89 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
-  font-weight: 100;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 h1 {
-  font-size: 108px;
+    font-size: 108px;
 }
 
 h2 {
-  font-size: 64px;
+    font-size: 64px;
 }
 
 h3 {
-  font-size: 42px;
+    font-size: 42px;
 }
 
 h4 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 p {
-  color: var(--p-color);
-  line-height: 1.4;
+    color: var(--p-color);
+    line-height: 1.4;
 }
 
 mark {
-  background-color: var(--orange-color);
+    background-color: var(--orange-color);
 }
 
 select,
 button,
 input,
 textarea {
-  padding: var(--ui-element-padding);
-  border: none;
-  border-radius: var(--std-radius);
+    padding: var(--ui-element-padding);
+    border: none;
+    border-radius: var(--std-radius);
 }
 
 body {
-  background-color: var(--background-color);
+    background-color: var(--background-color);
 }
 
 header,
 footer,
 main {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 header > nav,
 footer,
 main {
-  max-width: 1920px;
-  margin: auto;
+    max-width: 1920px;
+    margin: auto;
 }
 
 main > * {
-  margin: 0 auto var(--std-space) auto;
+    margin: 0 auto var(--std-space) auto;
 }
 
 .support_slider img {
-  height: 54px;
+    height: 54px;
 }
 
 *:focus {
-  outline: 1px var(--orange-color) solid;
+    outline: 1px var(--orange-color) solid;
 }
 
 @media (max-width: 1040px) {
-  h1 {
-    font-size: 42px;
-  }
-  h2 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 20px;
-  }
+    h1 {
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 600px) {
-  header,
-  footer,
-  main {
-    padding: 0 8px;
-  }
+    header,
+    footer,
+    main {
+        padding: 0 8px;
+    }
 }
-
