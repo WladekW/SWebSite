@@ -7,6 +7,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2011.62271940284!2d22.061026890411775!3d53.15980381419067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471e347628cf15fd%3A0x3d81b353e3859a67!2zWmVzcMOzxYIgU3prw7PFgiBNZWNoYW5pY3pueWNoIGkgT2fDs2xub2tzenRhxYJjxIVjeWNoIG5yIDUgdyDFgW9txbx5!5e0!3m2!1spl!2sus!4v1760870636002!5m2!1spl!2sus"
         allowfullscreen=""
         loading="lazy"
+        fetchpriority="low"
         referrerpolicy="no-referrer-when-downgrade"
         title="school location"
     >
@@ -83,7 +84,7 @@
             </ul>
             <ul class="footer_menu--list">
                 <li>
-                    <a href="/contacts"><h5>Contact Us</h5></a>
+                    <a href="/contact"><h5>Contact Us</h5></a>
                 </li>
                 <li>
                     <a href="/"><span>Section</span></a>

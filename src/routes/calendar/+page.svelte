@@ -4,6 +4,9 @@
     import CalendarArrow from "$lib/components/ui/CalendarArrow.svelte";
     import { onMount } from "svelte";
 
+    //img import
+    import calendarImport from "$lib/assets/Img/bg/(6).jpg";
+
     const date = new Date();
     let selectedMonth = date.getMonth();
     let monthName = $state("");
@@ -57,7 +60,7 @@
 />
 
 <section>
-    <ImgBgBlock src="Img/bg/(6).jpg" className="calendar_section">
+    <ImgBgBlock src={calendarImport} className="calendar_section">
         <div class="calendar_main">
             <div class="calendar_top">
                 <div class="calendar_menu">
@@ -85,8 +88,11 @@
 </section>
 
 <style>
+    :global(.calendar_section) {
+        display: block !important;
+    }
+
     .calendar_main {
-        width: 100%;
         height: 100%;
         padding: var(--std-padding);
         display: grid;

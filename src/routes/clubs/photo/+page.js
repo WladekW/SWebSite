@@ -1,3 +1,5 @@
+import bgImg from "$lib/assets/Img/bg/(8).webp";
+
 export function load() {
   return {
     TitleBlockCategory: "FotoBudka",
@@ -7,7 +9,7 @@ export function load() {
     data: "12.23.3025",
     author: "Kubabuba6912",
     club: "FotoBudka",
-    ImgSrc: "/Img/koyasan.webp",
+    ImgSrc: bgImg,
     article: [
       {
         title: "ELITE CLUB FOR THE BEST, SMARTER, STRONGER",

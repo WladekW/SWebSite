@@ -1,3 +1,5 @@
+import bgImg from "$lib/assets/Img/bg/(3).webp";
+
 export function load() {
   return {
     TitleBlockCategory: "Club",
@@ -7,7 +9,7 @@ export function load() {
     data: "12.23.2095",
     author: "A Bałazy",
     club: "Microprocessor",
-    ImgSrc: "/Img/bg/(3).webp",
+    ImgSrc: bgImg,
     article: [
       {
         title: "ELITE CLUB FOR Specialists",

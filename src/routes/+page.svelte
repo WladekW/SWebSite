@@ -8,10 +8,19 @@
     import MoreBlockV from "$lib/components/blocks/MoreBlockV.svelte";
     import BrightnessMask from "$lib/components/masks/BrightnessMask.svelte";
     import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
+
+    // img import
+    import logoBkash from "$lib/assets/icons/logos/bkash.webp";
+    import logoJordan from "$lib/assets/icons/logos/Jordan.webp";
+    import logoMico from "$lib/assets/icons/logos/mico.webp";
+    import logoXbox from "$lib/assets/icons/logos/xbox.webp";
+
+    import bgHome from "$lib/assets/Img/bg/(4).webp";
+    import bgAbout from "$lib/assets/Img/bg/(8).webp";
+    import bgAdditional from "$lib/assets/Img/bg/(7).webp";
 </script>
 
-<ImgBgBlock src="/Img/bg/(4).webp" className="home_screen">
-    <BrightnessMask brightness="88" />
+<ImgBgBlock src={bgHome} className="home_screen">
     <TitleH1Block
         category="Home"
         title="Mechaniak - The Golden Age"
@@ -49,14 +58,14 @@
 </Slider>
 
 <section class="support_slider">
-    <img src="/icons/logos/bkash.png" alt="bkash" />
-    <img src="/icons/logos/Jordan.png" alt="bkash" />
-    <img src="/icons/logos/mico.png" alt="bkash" />
-    <img src="/icons/logos/xbox.png" alt="bkash" />
+    <img src={logoBkash} alt="bkash" />
+    <img src={logoJordan} alt="Jordan" />
+    <img src={logoMico} alt="mico" />
+    <img src={logoXbox} alt="xbox" />
 </section>
 
 <section class="project_about">
-    <ImgBgBlock className="about--img_block" src="/Img/koyasan.webp">
+    <ImgBgBlock className="about--img_block" src={bgAbout}>
         <LearnMore />
     </ImgBgBlock>
     <SectionBlock
@@ -92,7 +101,7 @@
             text="  Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
         />
     </div>
-    <ImgBgBlock src="/Img/dhtang.webp" className="additional--img_block" />
+    <ImgBgBlock src={bgAdditional} className="additional--img_block" />
 </section>
 
 <style>

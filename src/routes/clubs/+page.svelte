@@ -1,6 +1,13 @@
 <script>
     import TitleBlock from "$lib/components/blocks/TitleBlock.svelte";
     import MoreBlockH from "$lib/components/blocks/MoreBlockH.svelte";
+
+    //img import
+
+    import club1 from "$lib/assets/Img/clubs/1.webp";
+    import club2 from "$lib/assets/Img/clubs/2.webp";
+    import club3 from "$lib/assets/Img/clubs/3.webp";
+    import club4 from "$lib/assets/Img/clubs/4.webp";
 </script>
 
 <TitleBlock
@@ -18,27 +25,31 @@
         href="/clubs/micro"
     />
 
-    <img
-        src="/Img/clubs/1.webp"
+    <enhanced:img
+        src={club1}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/2.webp"
+    <enhanced:img
+        src={club2}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/3.webp"
+    <enhanced:img
+        src={club3}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/4.webp"
+    <enhanced:img
+        src={club4}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
@@ -55,27 +66,31 @@
         title="Mikroprocessor"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem ducimus nisi, sequi quod, necessitatibus, quidem cupiditate dolorum saepe quasi ratione? Tempora eius in accusantium qui fugit enim dolores, explicabo, sequi magni, odio dicta. Porro voluptas tempora ad optio nobis odit quidem at, sapiente libero praesentium sit alias deserunt aspernatur."
     />
-    <img
-        src="/Img/clubs/1.webp"
+    <enhanced:img
+        src={club1}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/2.webp"
+    <enhanced:img
+        src={club2}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/3.webp"
+    <enhanced:img
+        src={club3}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
-    <img
-        src="/Img/clubs/4.webp"
+    <enhanced:img
+        src={club4}
         alt="img"
+        class="clubs_blocks--img"
         loading="eager"
         fetchpriority="high"
     />
@@ -97,7 +112,7 @@
         aspect-ratio: 1 / 1;
         border-radius: var(--std-radius);
     }
-    .clubs_blocks > img {
+    .clubs_blocks--img {
         width: 100%;
         height: 100%;
         object-fit: cover;
