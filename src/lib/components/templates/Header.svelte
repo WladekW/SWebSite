@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import ButtonLink from "$lib/components/ui/ButtonLink.svelte";
-    import ButtonLogin from "$lib/components/ui/ButtonLogin.svelte";
+    import ButtonOrange from "$lib/components/ui/ButtonOrange.svelte";
     import favicon from "$lib/assets/favicon.svg";
 
     var isOpen;
@@ -20,8 +20,7 @@
             <li><ButtonLink href="/clubs" text="Clubs" /></li>
             <li><ButtonLink href="/projects" text="Projects" /></li>
             <li><ButtonLink href="/calendar" text="Calendar" /></li>
-            <li><ButtonLink href="/contact" text="Contact Us" /></li>
-            <li><ButtonLogin href="/auth" text="Log in" /></li>
+            <li><ButtonOrange href="/contact" text="Contact Us" /></li>
         </ul>
         <button aria-label="menu" class="burger_menu" on:click={toggleMenu}>
             <hr />
@@ -34,7 +33,6 @@
             <li><a href="/projects" on:click={toggleMenu}>Projects</a></li>
             <li><a href="/calendar" on:click={toggleMenu}>Calendar</a></li>
             <li><a href="/contact" on:click={toggleMenu}>Contact Us</a></li>
-            <li><a href="/auth" on:click={toggleMenu}>Log in</a></li>
         </ul>
     </nav>
 </header>

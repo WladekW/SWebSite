@@ -20,3 +20,9 @@
 </main>
 
 <Footer />
+
+<style>
+  :global(main){
+    min-height: 100vh;
+  }
+</style>
