@@ -19,7 +19,7 @@
         </div>
     </ImgBlock>
     <div class="auth_content">
-        <h2>Log In</h2>
+        <h2>Contact Us</h2>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
             voluptatibus.

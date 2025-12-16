@@ -48,7 +48,7 @@
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
     />
     <MoreBlockH
-        title="Rozszrzające z matematyki"
+        title="Rozszerzające z matematyki"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
     />
     <MoreBlockH
