@@ -3,7 +3,13 @@
 </script>
 
 <div class={`wrapper ${className}`}>
-    <enhanced:img {src} alt="" class="bg_block--img" />
+    <enhanced:img
+        {src}
+        alt=""
+        class="bg_block--img"
+        fetchpriority="high"
+        loading="lazy"
+    />
     <div class="content">
         {@render children?.()}
     </div>
