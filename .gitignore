@@ -24,6 +24,6 @@ vite.config.ts.timestamp-*
 
 
 # Db
-.sqlite
-.sqlite-shm
-.sqlite-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
