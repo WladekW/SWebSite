@@ -5,9 +5,9 @@
     import SectionBlock from "$lib/components/blocks/SectionItemBlock.svelte";
 
     //img import
-    import projectsImg1 from "$lib/assets/Img/projects/1.jpg";
-    import projectsImg2 from "$lib/assets/Img/projects/2.jpg";
-    import projectsImg3 from "$lib/assets/Img/projects/3.jpg";
+    import projectsImg1 from "$lib/assets/Img/projects/1.jpg?enhanced&w=1280;640;400";
+    import projectsImg2 from "$lib/assets/Img/projects/2.jpg?enhanced&w=1280;640;400";
+    import projectsImg3 from "$lib/assets/Img/projects/3.jpg?enhanced&w=1280;640;400";
 </script>
 
 <TitleBlock
@@ -18,7 +18,11 @@
 
 <section class="porjects_section">
     <div class="projects_item">
-        <ImgBgBlock className="projects_item--img_block" src={projectsImg1}>
+        <ImgBgBlock
+            className="projects_item--img_block"
+            src={projectsImg1}
+            loading="eager "
+        >
             <LearnMore />
         </ImgBgBlock>
         <SectionBlock

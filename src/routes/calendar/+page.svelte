@@ -5,7 +5,7 @@
     import { onMount } from "svelte";
 
     //img import
-    import calendarImport from "$lib/assets/Img/bg/(6).jpg";
+    import calendarImport from "$lib/assets/Img/bg/(6).jpg?enhanced&w=1280;640;400";
 
     const date = new Date();
     let selectedMonth = date.getMonth();
@@ -60,7 +60,11 @@
 />
 
 <section>
-    <ImgBgBlock src={calendarImport} className="calendar_section">
+    <ImgBgBlock
+        src={calendarImport}
+        className="calendar_section"
+        loading="eager"
+    >
         <div class="calendar_main">
             <div class="calendar_top">
                 <div class="calendar_menu">

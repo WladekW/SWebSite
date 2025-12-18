@@ -79,5 +79,11 @@
             align-items: center;
             padding: 16px;
         }
+
+        .footer_menu--list {
+            text-align: center;
+            gap: var(--std-space);
+            flex-direction: column;
+        }
     }
 </style>

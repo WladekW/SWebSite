@@ -5,11 +5,11 @@
     import BlurMask from "$lib/components/masks/BlurMask.svelte";
 
     //img import
-    import bgLogin from "$lib/assets/Img/bg/(2).webp";
+    import bgLogin from "$lib/assets/Img/bg/(2).webp?enhanced&w=1280;640;400";
 </script>
 
 <section class="login_section">
-    <ImgBlock className="login--img_block" src={bgLogin}>
+    <ImgBlock className="login--img_block" src={bgLogin} loading="eager">
         <div class="img_block--content">
             <BlurMask />
             <TransparentBlock

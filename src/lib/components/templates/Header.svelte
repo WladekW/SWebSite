@@ -7,6 +7,7 @@
     var isOpen;
     function toggleMenu() {
         isOpen = !isOpen;
+        console.log("Menu: " + isOpen);
     }
 </script>
 
@@ -83,7 +84,7 @@
         /* display: none; */
         position: absolute;
         z-index: -1;
-        top: -100vh;
+        transform: translateY(-100vh);
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -93,7 +94,7 @@
     }
 
     .burger_menu--list.open {
-        top: 0;
+        transform: translateY(48vh);
     }
 
     .burger_menu > hr {

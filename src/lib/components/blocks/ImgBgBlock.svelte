@@ -1,22 +1,14 @@
 <script>
-    var { src, children, className } = $props();
+    var { src, children, className, loading = "lazy" } = $props();
 </script>
 
 <div class={`wrapper ${className}`}>
     <enhanced:img
         {src}
-        alt=""
+        alt="background_image"
         class="bg_block--img"
-        fetchpriority="high"
-        loading="lazy"
-        sizes="(min-width: 1920px) 1920px,
-                 (min-width: 1536px) 1536px,
-                 (min-width: 1280px) 1280px,
-                 (min-width: 1024px) 1024px,
-                 (min-width: 768px) 768px,
-                 (min-width: 640px) 640px,
-                 (min-width: 480px) 480px,
-                 100vw"
+        {loading}
+        sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px"
     />
     <div class="content">
         {@render children?.()}

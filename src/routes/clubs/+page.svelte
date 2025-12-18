@@ -1,6 +1,7 @@
 <script>
     import TitleBlock from "$lib/components/blocks/TitleBlock.svelte";
     import MoreBlockH from "$lib/components/blocks/MoreBlockH.svelte";
+    import ImgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
 
     //img import
 
@@ -25,34 +26,11 @@
         href="/clubs/micro"
     />
 
-    <enhanced:img
-        src={club1}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club2}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club3}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club4}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
+    <ImgBlock src={club1} class="clubs_blocks--img" loading="eager" />
+    <ImgBlock src={club2} class="clubs_blocks--img" loading="eager" />
+    <ImgBlock src={club3} class="clubs_blocks--img" loading="eager" />
+    <ImgBlock src={club4} class="clubs_blocks--img" loading="eager" />
+
     <MoreBlockH
         className="clubs_blocks--item"
         category="FOTO"
@@ -66,34 +44,10 @@
         title="Mikroprocessor"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem ducimus nisi, sequi quod, necessitatibus, quidem cupiditate dolorum saepe quasi ratione? Tempora eius in accusantium qui fugit enim dolores, explicabo, sequi magni, odio dicta. Porro voluptas tempora ad optio nobis odit quidem at, sapiente libero praesentium sit alias deserunt aspernatur."
     />
-    <enhanced:img
-        src={club1}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club2}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club3}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
-    <enhanced:img
-        src={club4}
-        alt="img"
-        class="clubs_blocks--img"
-        loading="eager"
-        fetchpriority="high"
-    />
+    <ImgBlock src={club1} class="clubs_blocks--img" />
+    <ImgBlock src={club2} class="clubs_blocks--img" />
+    <ImgBlock src={club3} class="clubs_blocks--img" />
+    <ImgBlock src={club4} class="clubs_blocks--img" />
     <MoreBlockH
         className="clubs_blocks--item"
         category="ABRACADABRA"
@@ -108,11 +62,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: var(--std-space);
     }
-    .clubs_blocks > * {
+    :global(.clubs_blocks > *) {
         aspect-ratio: 1 / 1;
         border-radius: var(--std-radius);
     }
-    .clubs_blocks--img {
+    :global(.clubs_blocks--img) {
         width: 100%;
         height: 100%;
         object-fit: cover;
