@@ -20,7 +20,7 @@
           <a href="/contact"><h5>Contact Us</h5></a>
         </li>
       </ul>
-      <a href="/">© 2025 ZSMiO nr 5</a>
+      <a class="copyright" href="/">© 2025 ZSMiO nr 5</a>
     </nav>
   </div>
 </footer>
@@ -66,6 +66,15 @@
     background-color: var(--gray-lighter-color);
   }
 
+  footer .copyright {
+      color: #808080;
+      transition: color 0.25s ease
+  }
+  
+  footer .copyright:hover {
+      color: #CCC;
+  }
+  
   @media (max-width: 1040px) {
     footer {
       grid-template-columns: 1fr;
@@ -74,7 +83,7 @@
   }
 
   @media (max-width: 600px) {
-    .footer_menu {
+    .footer_menu--list {
       flex-direction: column;
       gap: var(--std-space);
       align-items: center;

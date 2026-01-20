@@ -124,6 +124,8 @@
         background-color: #060503b9;
         border-radius: var(--std-radius);
         backdrop-filter: blur(8px);
+        
+        min-height: 100px;
     }
 
     .month_name {
