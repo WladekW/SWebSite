@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [enhancedImages(), sveltekit()],
   build: {
     rollupOptions: {
-      externalNativeModule: true, // pomija natywne binarki
+      external: ["fs", "path"],
     },
   },
 });

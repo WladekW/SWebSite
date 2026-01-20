@@ -1,29 +1,15 @@
-<!-- <script>
-    var { src, children, className } = $props();
-</script>
-
-<div style="background-image: url('{src}');" class={className}>
-    {@render children?.()}
-</div>
-
-<style>
-    div {
-        background-image: url("/Img/koyasan.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: var(--std-radius);
-        display: flex;
-        align-items: end;
-        justify-content: end;
-    }
-</style> -->
 <script>
-    var { src, children, className } = $props();
+    var { src, children, className, loading = "lazy" } = $props();
 </script>
 
 <div class={`wrapper ${className}`}>
-    <enhanced:img {src} alt="" class="bg_block--img" />
+    <enhanced:img
+        {src}
+        alt="background_image"
+        class="bg_block--img"
+        {loading}
+        sizes="(min-width:1920px) 1280px, (min-width:1080px) 640px, (min-width:768px) 400px"
+    />
     <div class="content">
         {@render children?.()}
     </div>

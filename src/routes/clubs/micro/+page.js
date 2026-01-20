@@ -1,4 +1,4 @@
-import bgImg from "$lib/assets/Img/bg/(3).webp";
+import bgImg from "$lib/assets/Img/bg/(3).webp?enhanced&w=1280;640;400";
 
 export function load() {
   return {

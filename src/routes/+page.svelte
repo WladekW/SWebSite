@@ -15,9 +15,9 @@
     import logoMico from "$lib/assets/icons/logos/mico.webp";
     import logoXbox from "$lib/assets/icons/logos/xbox.webp";
 
-    import bgHome from "$lib/assets/Img/bg/(4).webp";
-    import bgAbout from "$lib/assets/Img/bg/(8).webp";
-    import bgAdditional from "$lib/assets/Img/bg/(7).webp";
+    import bgHome from "$lib/assets/Img/bg/(4).webp?enhanced&w=1280;640;400";
+    import bgAbout from "$lib/assets/Img/bg/(8).webp?enhanced&w=1280;640;400";
+    import bgAdditional from "$lib/assets/Img/bg/(7).webp?enhanced&w=1280;640;400";
 </script>
 
 <ImgBgBlock src={bgHome} className="home_screen">

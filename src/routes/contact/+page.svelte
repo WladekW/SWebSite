@@ -1,15 +1,15 @@
 <script>
-    import ImgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
+    import ImgBgBlock from "$lib/components/blocks/ImgBgBlock.svelte";
     import TransparentBlock from "$lib/components/blocks/TransparentBlock.svelte";
     import ContactForm from "$lib/components/ContactForm.svelte";
     import BlurMask from "$lib/components/masks/BlurMask.svelte";
 
     //import img
-    import bgContacts from "$lib/assets/Img/bg/(5).webp";
+    import bgContacts from "$lib/assets/Img/bg/(5).webp?enhanced&w=1280;640;400";
 </script>
 
 <section class="login_section">
-    <ImgBlock className="login--img_block" src={bgContacts}>
+    <ImgBgBlock className="login--img_block" src={bgContacts}>
         <div class="img_block--content">
             <BlurMask />
             <TransparentBlock
@@ -17,7 +17,7 @@
                 text="-Huaj! Aim from good! And Ich doibeen form DeGermanion - Don!"
             />
         </div>
-    </ImgBlock>
+    </ImgBgBlock>
     <div class="auth_content">
         <h2>Contact Us</h2>
         <p>

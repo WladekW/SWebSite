@@ -2,6 +2,7 @@
     import favicon from "$lib/assets/favicon.svg";
     import TitleBlock from "$lib/components/blocks/TitleBlock.svelte";
     import AdditionalBlock from "$lib/components/blocks/AdditionalBlock.svelte";
+    import ImgBlock from "$lib/components/blocks/ImgBlock.svelte";
 
     var {
         TitleBlockCategory,
@@ -28,12 +29,7 @@
 </section>
 
 <section class="welcome_img">
-    <img
-        src={ImgSrc}
-        alt="welcoming img"
-        loading="eager"
-        fetchpriority="high"
-    />
+    <ImgBlock src={ImgSrc} loading="eager" />
 </section>
 
 <section class="article">
@@ -62,7 +58,7 @@
         height: 600px;
     }
 
-    .welcome_img > img {
+    :global(.welcome_img img) {
         width: 100%;
         height: 100%;
         object-fit: cover;

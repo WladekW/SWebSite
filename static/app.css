@@ -1,11 +1,11 @@
 :root {
-    --gray-color: #101010;
-    --gray-lighter-color: #121212;
+    --gray-color: #111111;
+    --gray-lighter-color: #1f1f1f;
     --background-color: #060503;
     --orange-color: #a72906;
     --orange-lighter-color: #d33d03;
     --text-color: #d8d8d8;
-    --p-color: #999;
+    --p-color: #9f9f9f;
 
     --std-space: 8px;
     --ui-element-padding: 12px;
@@ -20,6 +20,8 @@
 * {
     color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    transition: 0.3s background-color;
 }
 
 .slider::-webkit-scrollbar,
